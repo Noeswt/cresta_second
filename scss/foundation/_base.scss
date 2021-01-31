@@ -1,0 +1,32 @@
+html {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    font-family: 'Noto Serif', 'Noto Serif JP', serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+//font-color
+$cwhite: #fff;
+$cblack: #171717;
+
+// bgc 
+$header: #282F35;
+$btn: #F7D43F;
+
+// font-family: 'Noto Serif JP', serif;
+// font-family: 'Noto Serif', serif;

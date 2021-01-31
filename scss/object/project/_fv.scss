@@ -1,0 +1,31 @@
+.p-fv {
+    position: relative;
+    height: 100vh;
+    min-height: 550px;
+    background-image: url(../img/fv-bgi_01@2x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__main-copy {
+        position: absolute;
+        top: 50%;
+        color: $cwhite;
+        line-height: 1.5;
+        letter-spacing: .05em;
+        padding-left: 20px;
+
+        &--en {
+            font-size: 70px;
+            font-family: 'Noto Serif', serif;
+            font-weight: bold;
+        }
+
+        &--ja {
+            font-size: 30px;
+            font-family: 'Noto Serif JP', serif;
+            // font-weight: bold;
+            text-align: center;
+        }
+    }
+}

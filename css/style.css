@@ -1,0 +1,600 @@
+html {
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  font-family: 'Noto Serif', 'Noto Serif JP', serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+.l-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.l-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+.l-header {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100px;
+}
+
+.c-bottom-txt-b {
+  color: #171717;
+  opacity: .07;
+  font-size: 80px;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: .05em;
+}
+
+.c-bottom-txt-w {
+  color: #fff;
+  opacity: .07;
+  font-size: 80px;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: .05em;
+}
+
+.c-burger-btn {
+  display: none;
+}
+
+.c-link-btn {
+  color: #171717;
+  background-color: #F7D43F;
+  border-radius: 30px;
+  font-family: 'Noto Serif', serif;
+}
+
+.c-main-ttl {
+  color: #171717;
+  font-size: 60px;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: .05em;
+}
+
+.p-concept__ttl {
+  margin: 0 auto 80px;
+  padding: 0 20px;
+}
+
+.p-concept__ttl::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  color: #282F35;
+  background-color: #171717;
+  width: 200px;
+  height: 5px;
+  margin-left: 30px;
+}
+
+.p-concept__read {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 60px;
+  line-height: 1.7;
+  letter-spacing: .05em;
+  font-family: 'Noto Serif JP', serif;
+}
+
+.p-concept__content {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  margin-bottom: 100px;
+}
+
+.p-concept__content__txt {
+  width: 50%;
+  line-height: 1.5;
+  letter-spacing: .05em;
+  font-family: 'Noto Serif JP', serif;
+  margin-right: 60px;
+}
+
+.p-concept__content__img {
+  margin-left: 60px;
+}
+
+.p-concept__bottom {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.p-contact-form {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.p-contact-form form {
+  margin-bottom: 80px;
+}
+
+.p-contact-form__ttl {
+  margin-bottom: 10px;
+  font-family: 'Noto Serif', serif;
+}
+
+.p-contact-form ul {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.p-contact-form ul li {
+  margin-right: 10px;
+  font-family: 'Noto Serif JP', serif;
+}
+
+.p-contact-form__box {
+  margin-bottom: 30px;
+}
+
+.p-contact-form__box input {
+  width: 100%;
+  display: block;
+}
+
+.p-contact-form__box textarea {
+  width: 100%;
+  height: 100px;
+  display: block;
+}
+
+.p-contact-form a {
+  width: 250px;
+  height: 60px;
+  line-height: 60px;
+  letter-spacing: .05em;
+  display: block;
+  text-align: center;
+  margin: 0 auto 100px;
+  box-shadow: 0px 0px 15px -2px #171717;
+}
+
+.p-contact-form a:active {
+  box-shadow: none;
+}
+
+.p-contact-form a:hover {
+  filter: brightness(70%);
+}
+
+.p-contact-page {
+  background-image: url(../img/contact-page-bgi@2x.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.p-contact-page__ttl {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  margin: 100px auto 80px;
+  padding: 0 20px;
+}
+
+.p-contact-page__txt {
+  color: #fff;
+  font-size: 30px;
+  font-family: 'Noto Serif JP', serif;
+  letter-spacing: .05em;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.p-contact-page a {
+  width: 250px;
+  height: 60px;
+  line-height: 60px;
+  letter-spacing: .05em;
+  display: block;
+  text-align: center;
+  margin: 0 auto 100px;
+  box-shadow: 0px 8px 0px -2px #171717;
+}
+
+.p-contact-page a:active {
+  box-shadow: none;
+  position: relative;
+  top: 8px;
+}
+
+.p-contact-page a:hover {
+  filter: brightness(70%);
+}
+
+.p-contact-page__bottom {
+  display: flex;
+  padding-left: 20px;
+}
+
+.p-contact {
+  background-image: url(../img/contact-bgi@2x.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.p-contact__ttl {
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 auto 80px;
+  padding: 0 20px;
+}
+
+.p-contact__ttl::after {
+  content: "";
+  display: inline-block;
+  color: #282F35;
+  background-color: #fff;
+  width: 200px;
+  height: 5px;
+  margin-left: 30px;
+}
+
+.p-contact__txt {
+  color: #fff;
+  font-size: 30px;
+  font-family: 'Noto Serif JP', serif;
+  letter-spacing: .05em;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.p-contact a {
+  width: 250px;
+  height: 60px;
+  line-height: 60px;
+  letter-spacing: .05em;
+  display: block;
+  text-align: center;
+  margin: 0 auto 100px;
+  box-shadow: 0px 0px 15px -2px #171717;
+}
+
+.p-contact a:active {
+  box-shadow: none;
+}
+
+.p-contact a:hover {
+  filter: brightness(70%);
+}
+
+.p-contact__bottom {
+  display: flex;
+  padding-left: 20px;
+}
+
+.p-fv {
+  position: relative;
+  height: 100vh;
+  min-height: 550px;
+  background-image: url(../img/fv-bgi_01@2x.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.p-fv__main-copy {
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  line-height: 1.5;
+  letter-spacing: .05em;
+  padding-left: 20px;
+}
+
+.p-fv__main-copy--en {
+  font-size: 70px;
+  font-family: 'Noto Serif', serif;
+  font-weight: bold;
+}
+
+.p-fv__main-copy--ja {
+  font-size: 30px;
+  font-family: 'Noto Serif JP', serif;
+  text-align: center;
+}
+
+.p-header {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 100px;
+}
+
+.p-header__left__ttl a {
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold;
+  font-style: italic;
+  transition: .5s;
+  margin: 0 20px;
+}
+
+.p-header__left__ttl a:hover {
+  opacity: .7;
+  transition: .5s;
+}
+
+.p-header__right__nav-item {
+  display: flex;
+}
+
+@media (max-width: 760px) {
+  .p-header__right__nav-item {
+    display: none;
+  }
+}
+
+.p-header__right__nav-item__list {
+  margin: 0 20px;
+}
+
+.p-header__right__nav-item__list a {
+  color: #fff;
+  font-size: 16px;
+}
+
+.p-section {
+  padding: 100px 0 70px;
+}
+
+.p-service__ttl {
+  margin: 0 auto 80px;
+  padding: 0 20px;
+}
+
+.p-service__ttl::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  color: #282F35;
+  background-color: #171717;
+  width: 200px;
+  height: 5px;
+  margin-left: 30px;
+}
+
+.p-service ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 100px;
+}
+
+.p-service__img {
+  position: relative;
+  transition: .3s;
+}
+
+.p-service__img:hover {
+  filter: brightness(50%);
+  transition: .3s;
+}
+
+.p-service__img__txt {
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Noto Serif', serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.p-service__bottom {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.p-works {
+  background-image: url(../img/works-bgi@2x.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.p-works__ttl {
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 auto 80px;
+  padding: 0 20px;
+}
+
+.p-works__ttl::after {
+  content: "";
+  display: inline-block;
+  color: #282F35;
+  background-color: #fff;
+  width: 200px;
+  height: 5px;
+  margin-left: 30px;
+}
+
+.p-works__box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 100px;
+  padding: 0 20px;
+}
+
+.p-works__box__item {
+  box-shadow: 0px 0px 4px #171717;
+}
+
+.p-works__box__item__txt {
+  color: #171717;
+  background-color: #fff;
+  font-family: 'Noto Serif JP', serif;
+  height: 180px;
+  line-height: 1.7;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.p-works a {
+  width: 250px;
+  height: 60px;
+  line-height: 60px;
+  letter-spacing: .05em;
+  display: block;
+  text-align: center;
+  margin: 0 auto 100px;
+  box-shadow: 0px 0px 15px -2px #171717;
+}
+
+.p-works a:active {
+  box-shadow: none;
+}
+
+.p-works a:hover {
+  filter: brightness(70%);
+}
+
+.p-works__bottom {
+  padding-left: 20px;
+}
+/*# sourceMappingURL=style.css.map */

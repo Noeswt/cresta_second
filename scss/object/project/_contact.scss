@@ -1,0 +1,59 @@
+.p-contact {
+    background-image: url(../img/contact-bgi@2x.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+
+    &__ttl {
+        color: $cwhite;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0 auto 80px;
+        padding: 0 20px;
+
+        &::after {
+            content: "";
+            display: inline-block;
+            color: $header;
+            background-color: $cwhite;
+            width: 200px;
+            height: 5px;
+            margin-left: 30px;
+        }
+    }
+
+    &__txt {
+        color: $cwhite;
+        font-size: 30px;
+        font-family: 'Noto Serif JP', serif;
+        letter-spacing: .05em;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    a {
+        width: 250px;
+        height: 60px;
+        line-height: 60px;
+        letter-spacing: .05em;
+        display: block;
+        text-align: center;
+        margin: 0 auto 100px;
+        box-shadow: 0px 0px 15px -2px $cblack;
+
+        &:active {
+            box-shadow: none;
+        }
+
+        &:hover {
+            filter: brightness(70%);
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        padding-left: 20px;
+    }
+}

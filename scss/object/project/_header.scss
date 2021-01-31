@@ -1,0 +1,45 @@
+.p-header {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 100px;
+
+    &__left {
+        &__ttl {
+            a {
+                color: $cwhite;
+                font-size: 26px;
+                font-weight: bold;
+                font-style: italic;
+                transition: .5s;
+                margin: 0 20px;
+
+                &:hover {
+                    opacity: .7;
+                    transition: .5s;
+                }
+            }  
+        }
+    }
+
+    &__right {
+        &__nav-item {
+            display: flex;
+
+            @include tab {
+                display: none;
+            };
+
+            &__list {
+                margin: 0 20px;
+
+                a {
+                    color: $cwhite;
+                    font-size: 16px; 
+                }
+            }
+        }
+    }
+}
